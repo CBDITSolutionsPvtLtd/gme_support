@@ -1,0 +1,13 @@
+{
+ "doctype": "Page",
+ "module": "GME Portal",
+ "name": "gme-support-portal",
+ "page_name": "gme-support-portal",
+ "system_page": 0,
+ "title": "GME Support Portal",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "GME Ticket Manager"},
+  {"role": "All"}
+ ]
+}

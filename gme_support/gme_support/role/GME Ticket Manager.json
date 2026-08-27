@@ -1,0 +1,6 @@
+{
+  "doctype": "Role",
+  "role_name": "GME Ticket Manager",
+  "desk_access": 1,
+  "is_custom": 1
+}

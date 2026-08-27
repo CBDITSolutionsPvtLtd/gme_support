@@ -1,0 +1,232 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-04 15:29:11.169047",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "subject",
+  "priority",
+  "status",
+  "posting_date",
+  "solved_date",
+  "resolution_time",
+  "column_break_gyng",
+  "description",
+  "section_break_pvkr",
+  "communication_html",
+  "new_message",
+  "messages",
+  "section_break_myjv",
+  "replies",
+  "section_break_qnnb",
+  "raised_by",
+  "column_break_kedm",
+  "gme_ticket_id",
+  "site_url",
+  "feedbackgme_tab",
+  "feedback_rating",
+  "feedback_option",
+  "feedback_extra"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Autocomplete",
+   "label": "Priority"
+  },
+  {
+   "fieldname": "column_break_gyng",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Autocomplete",
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "feedbackgme_tab",
+   "fieldtype": "Tab Break",
+   "label": "Feedback"
+  },
+  {
+   "fieldname": "feedback_rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "feedback_option",
+   "fieldtype": "Autocomplete",
+   "label": "Feedback (Option)"
+  },
+  {
+   "fieldname": "feedback_extra",
+   "fieldtype": "Long Text",
+   "label": "Feedback (Extra)"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "solved_date",
+   "fieldtype": "Date",
+   "label": "Solved Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "resolution_time",
+   "fieldtype": "Duration",
+   "label": "Resolution Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_qnnb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "raised_by",
+   "fieldtype": "Data",
+   "label": "Raised By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kedm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_myjv",
+   "fieldtype": "Section Break",
+   "label": "Support Replies"
+  },
+  {
+   "fieldname": "replies",
+   "fieldtype": "Table",
+   "label": "Replies",
+   "options": "GME Ticket Reply",
+   "read_only": 1
+  },
+  {
+   "fieldname": "site_url",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Site URL",
+   "options": "URL",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gme_ticket_id",
+   "fieldtype": "Data",
+   "label": "GME Ticket ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_pvkr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "messages",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Messages",
+   "options": "GME Ticket Message"
+  },
+  {
+   "fieldname": "communication_html",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "new_message",
+   "fieldtype": "Text Editor",
+   "label": "New Message"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "links": [],
+ "modified": "2026-05-28 23:41:33.589122",
+ "modified_by": "Administrator",
+ "module": "GME Support",
+ "name": "GME Helpdesk Ticket",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "GME Ticket Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Open"
+  },
+  {
+   "color": "Yellow",
+   "title": "Replied"
+  },
+  {
+   "color": "Green",
+   "title": "Resolved"
+  },
+  {
+   "color": "Gray",
+   "title": "Closed"
+  }
+ ],
+ "title_field": "subject",
+ "track_changes": 1,
+ "track_seen": 1
+}
